@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
-  has_many :user_comments
-  has_many :users, through: :user_comments
+  has_one :user_comment
+  has_one :user, through: :user_comment
 end

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :user
       resources :post
       resources :usercomment
+      resources :comment
     end
   end
 end
