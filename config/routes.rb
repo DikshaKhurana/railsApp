@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :post
       resources :usercomment
       resources :comment
+      post 'savecomment', to: 'comment#savecomment'
     end
   end
 end

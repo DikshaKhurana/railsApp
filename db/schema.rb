@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170716110002) do
+ActiveRecord::Schema.define(version: 20170718184748) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
     t.text     "comment"
-    t.bigint   "like_count"
-    t.bigint   "dislike_count"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.bigint   "like_count",    default: 0
+    t.bigint   "dislike_count", default: 0
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "posts", force: :cascade do |t|

@@ -38,12 +38,12 @@
 		Type of Request : Get
 		
 		
-4. Fourth Api for saving comments .[to do--]
+4. Fourth Api for saving comments :[url]------->> localhost:3000/api/v1/savecomment
 		Will take post_id,user_id,comment as params ,if email_id coressponding to user not present will hit api for saving email_id
 		else save comments.
 		Type of Request :Put
 		
 5. Fifth Api for saving like and dislike count.:[url]------->> localhost:3000/api/v1/comment 
-		Will take comment_id, boolean like (true/false) where like=true  means like_count increment else dislike_count increment.
+		Will take user_id, comment_id, boolean like (true/false) where like=true  means like_count increment else dislike_count increment.
 		Type of Requset :Post
 	
